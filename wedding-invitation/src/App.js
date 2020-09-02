@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import background from 'img/background.svg';
+import background from '../src/img/background.svg';
 
 class App extends Component {
   render() {
@@ -16,9 +16,13 @@ class App extends Component {
           </ul>
         </nav>
         <div className="Home">
-        <img>{background}</img>
-          <h1>MR<span> & </span>MRS</h1>
-          <h3>are getting married</h3>
+        <img src={background}/>
+          <header className="Header">
+            <h1>MR<span> & </span>MRS</h1>
+            <h3>are getting married</h3>
+            <hr></hr>
+            <h3 className="date">02/09/2021</h3>
+          </header>
         </div>
       </div>
     );

@@ -1,0 +1,81 @@
+.App {
+  overflow: hidden;
+}
+
+.Home img {
+    width: 100%;
+    max-height: 110vh;
+    background-position: center;
+    top: -5rem;
+    z-index: -1;
+    position: absolute;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.Home {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  max-height: 6rem;
+  width: 100%;
+  z-index: 2;
+  padding: 2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  margin-right: 8rem;
+  letter-spacing: 2px;
+  color: rgb(135, 72, 69);
+  font-size: 0.9em;
+}
+
+.Header {
+  position: absolute;
+  top:30%;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.Header h1 {
+  font-size: 4em;
+  line-height: 0.4;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: rgb(135, 72, 69);
+}
+
+.Header h3 {
+  font-weight: 100;
+  color: rgb(135, 72, 69);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.Header span {
+  font-size: 2.1em;
+  margin-left: -1rem;
+  margin-right: -1.2rem;
+  color: rgb(234, 208, 194);
+}
+
+.date {
+  font-weight: 500;
+  color: rgb(135, 72, 69);
+}
+
+hr {
+  border: 1px solid;
+  color: rgb(234, 208, 194);
+}
+
+
