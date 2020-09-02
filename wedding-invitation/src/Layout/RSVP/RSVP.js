@@ -23,19 +23,16 @@ export class RSVP extends Component {
                             <br></br>
 
                             <label>Attending? <span>*</span></label>
-                            <br></br>
-                            <input type="radio" required></input><label>Yes, can't wait!</label>
-                            <input type="radio" required></input><label>No, can't come.</label>
-                            <br></br>
-
-                            <label>Kids meal required: <span>*</span></label>
-                            <input type="number" min="0" max="4" required></input>
+                            <select>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
                             <br></br>
 
-                            <label>Food allergies/intolerances <span>*</span></label>
+                            <label>Additional Guests' Names</label>
                             <br></br>
                             <input type="text"></input>
-                            <br></br>
+
                         </div>
 
                         <div className="RightSide">
@@ -49,11 +46,19 @@ export class RSVP extends Component {
                             <input type="text" required></input>
                             <br></br>
 
-                            <label>Comments? <span>*</span></label>
+                            <label>Kids meal required: <span>*</span></label>
+                            <input type="number" min="0" max="4" required></input>
+                            <br></br>
+
+                            <label>Food allergies/intolerances <span>*</span></label>
+                            <br></br>
+                            <input type="text"></input>
+                            <br></br>
+                        </div>
+                        <label>Comments? <span>*</span></label>
                             <br></br>
                             <textarea></textarea>
                             <br></br>
-                        </div>
                     </form>
                     <button>Submit</button>
                 </div>
