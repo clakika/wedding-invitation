@@ -1,33 +1,96 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import background from '../src/img/background.svg';
+import Navbar from '../src/components/Navbar/Navbar';
+import Home from '../src/Layout/Home/Home';
+import RSVP from '../src/Layout/RSVP/RSVP';
+import Gallery from '../src/Layout/Gallery/Gallery';
+import Location from '../src/Layout/Location/Location';
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  CSSTransition,
+  TransitionGroup,
+} from 'react-transition-group';
 
 class App extends Component {
   render() {
+
     return (
-      <div className="App">
-        <nav className="navBar"> 
-          <ul>
-            <li>Home</li>
-            <li>RSVP</li>
-            <li>Photo Gallery</li>
-            <li>Wedding Party</li>
-            <li>Locations</li>
-          </ul>
-        </nav>
-        <div className="Home">
-        <img src={background}/>
-          <header className="Header">
-            <h1>MR<span> & </span>MRS</h1>
-            <h3>are getting married</h3>
-            <hr></hr>
-            <h3 className="date">02/09/2021</h3>
-          </header>
+        <div className="App">
+          <Router>
+          <Navbar />
+          <Route render={({location}) => (
+              <TransitionGroup>
+              <CSSTransition
+                key={location.key}
+                timeout={450}
+                classNames="fade"
+              >
+                <Switch location={location}>
+                  <Route path='/' exact component={Home}/>
+                  <Route path='/rsvp' component={RSVP}/>
+                  <Route path='/gallery' component={Gallery}/>
+                  <Route path='/location' component={Location}/>
+                </Switch>
+              </CSSTransition>
+            </TransitionGroup>
+          )} />
+          </Router>
         </div>
-      </div>
     );
   }
 }
 
 export default App;
+
+{/* <table>
+              <tr>
+                <td>Days until:</td>
+              </tr>
+              <tr className="Countdown__Info">
+                <td className="days">120</td>
+                <td className="hours">4</td>
+                <td className="minutes">12</td>
+                <td className="seconds">22</td>
+              </tr>
+              <tr>
+                <td>Days</td>
+                <td>Hours</td>
+                <td>Minutes</td>
+                <td>Seconds</td>
+              </tr>
+            </table>*/}
+
+    /*function countdown() {
+      var now = new Date();
+      var eventDate = new Date(2021, 2, 11);
+
+      var currentTime = now.getTime();
+      var eventTime = eventDate.getTime();
+
+      var remainingTime = eventTime - currentTime;
+
+      var s = Math.floor(remainingTime / 1000);
+      var m = Math.floor(s / 60);
+      var h = Math.floor(m / 60);
+      var d = Math.floor(h / 24);
+
+      h %= 24;
+      m %= 60;
+      s %= 60;
+
+      h = (h < 10) ? "0" + h : h;
+      m = (m < 10) ? "0" + m : m;
+      s = (s < 10) ? "0" + s : s;
+
+      document.querySelector("days").textContent = d;
+      document.querySelector("days").innerText = d;
+
+      document.querySelector("hours").textContent = h;
+      document.querySelector("minutes").textContent = m;
+      document.querySelector("seconds").textContent = s;
+
+      setTimeout(countdown, 1000);
+
+    }*/

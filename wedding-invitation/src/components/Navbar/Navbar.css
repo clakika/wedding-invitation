@@ -1,0 +1,44 @@
+nav {
+    max-height: 6rem;
+    width: 100%;
+    z-index: 2;
+    padding: 2rem;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navBar__Link{
+  margin-right: 8rem;
+  letter-spacing: 2px;
+  color: rgb(135, 72, 69);
+  font-size: 0.9em;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 150ms linear;
+}
