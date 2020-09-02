@@ -10,6 +10,7 @@ class App extends Component {
         <nav className="navBar"> 
           <ul>
             <li>Home</li>
+            <li>RSVP</li>
             <li>Photo Gallery</li>
             <li>Wedding Party</li>
             <li>Locations</li>
