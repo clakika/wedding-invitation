@@ -13,13 +13,17 @@ nav ul {
   justify-content: center;
 }
 
+.navBar__Link:hover {
+    border-bottom: 1px solid rgb(135, 72, 69);
+}
+
 .navBar__Link{
   margin-right: 8rem;
   letter-spacing: 2px;
   color: rgb(135, 72, 69);
   font-size: 0.9em;
   text-decoration: none;
-  transition: all .5s ease;
+  transition: all .3s ease;
 }
 
 .fade-appear,
