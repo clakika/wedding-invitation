@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from '../src/components/Navbar/Navbar';
 import Home from '../src/Layout/Home/Home';
 import RSVP from '../src/Layout/RSVP/RSVP';
-import Gallery from '../src/Layout/Gallery/Gallery';
+import Story from '../src/Layout/Story/Story';
 import Location from '../src/Layout/Location/Location';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -30,7 +30,7 @@ class App extends Component {
                 <Switch location={location}>
                   <Route path='/' exact component={Home}/>
                   <Route path='/rsvp' component={RSVP}/>
-                  <Route path='/gallery' component={Gallery}/>
+                  <Route path='/story' component={Story}/>
                   <Route path='/location' component={Location}/>
                 </Switch>
               </CSSTransition>

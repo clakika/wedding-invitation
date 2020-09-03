@@ -7,20 +7,20 @@ export class Navbar extends Component {
         return (
             <nav className="navBar"> 
                 <ul>
-                    <Link exact to='/'>
+                    <Link exact to='/' className="Links">
                         <li><a href="#" className="navBar__Link" activeClassName="active">Home</a></li>
                     </Link>
 
-                    <Link to='/rsvp'>
+                    <Link to='/rsvp' className="Links">
                         <li><a href="#" className="navBar__Link" activeClassName="active">RSVP</a></li>
                     </Link>
 
-                    <Link to='/gallery'>
-                        <li><a href="#" className="navBar__Link" activeClassName="active">Photo Gallery</a></li>
+                    <Link to='/story' className="Links">
+                        <li><a href="#" className="navBar__Link" activeClassName="active">Our Story</a></li>
                     </Link>
 
-                    <Link to='/location'>
-                        <li><a href="#" className="navBar__Link" activeClassName="active">Location</a></li>
+                    <Link to='/location' className="Links">
+                        <li><a href="#" className="navBar__Link" activeClassName="active">Locations</a></li>
                     </Link>
                 </ul>
             </nav>

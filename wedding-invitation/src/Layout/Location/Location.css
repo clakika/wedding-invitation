@@ -1,0 +1,87 @@
+.Location {
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Location h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 5rem;
+    margin-top: -0.2rem;
+    color: rgba(135, 72, 69, 0.849);
+}
+
+.LocationsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 8rem;
+}
+
+.Box h2 {
+    font-size: 1.7em;
+    letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
+    color: rgba(135, 72, 69, 0.849);
+    width: 100%;
+}
+
+.Box p {
+    font-size: 0.8em;
+    line-height: 2;
+    color:rgba(135, 72, 69, 0.849);
+}
+
+.Box h5 {
+    font-size: 1.7em;
+    margin-top: -0.9rem;
+    margin-bottom: -0.9rem;
+    color: rgba(135, 72, 69, 0.849)
+
+}
+
+.LocationOneImg {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(255, 255, 255, 0.199),rgb(255, 255, 255)),
+    url(../../img/locationOne.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: auto;
+    border-radius: 5px;
+    margin-bottom: -2.3rem;
+}
+
+.LocationTwoImg {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(255, 255, 255, 0.199),rgb(255, 255, 255)),
+    url(../../img/locationTwo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: auto;
+    border-radius: 5px;
+    margin-bottom: -2.3rem;
+}
+
+.Box {
+    width: 20rem;
+    height: 25rem;
+}
+
+.BoxOne {
+    grid-column: 1/2;
+}
+
+.BoxTwo {
+    grid-column: 2/3;
+}
+
+.Address {
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+
+

@@ -5,6 +5,7 @@ body {
   animation: fadeInAnimation ease 4s; 
   animation-iteration-count: 1; 
   animation-fill-mode: forwards; 
+  scroll-behavior: smooth;
 } 
 @keyframes fadeInAnimation { 
   0% { 
