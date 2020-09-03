@@ -6,6 +6,7 @@ import Home from '../src/Layout/Home/Home';
 import RSVP from '../src/Layout/RSVP/RSVP';
 import Story from '../src/Layout/Story/Story';
 import Location from '../src/Layout/Location/Location';
+import Gallery from '../src/Layout/Gallery/Gallery';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {
@@ -32,6 +33,7 @@ class App extends Component {
                   <Route path='/rsvp' component={RSVP}/>
                   <Route path='/story' component={Story}/>
                   <Route path='/location' component={Location}/>
+                  <Route path='/photogallery' component={Gallery}/>
                 </Switch>
               </CSSTransition>
             </TransitionGroup>

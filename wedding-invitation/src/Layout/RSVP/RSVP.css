@@ -28,13 +28,14 @@ form {
     font-size: 3.5em;
     color: rgb(135, 72, 69);
     letter-spacing: 5px;
+    margin-top: 1rem;
 }
 
 img {
     width: 16rem;
     position: absolute;
     right: 42%;
-    bottom: 55%;
+    bottom: 60%;
     z-index: -1;
 }
 

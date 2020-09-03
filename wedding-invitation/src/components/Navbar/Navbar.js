@@ -22,6 +22,10 @@ export class Navbar extends Component {
                     <Link to='/location' className="Links">
                         <li><a href="#" className="navBar__Link" activeClassName="active">Locations</a></li>
                     </Link>
+
+                    <Link to='/photogallery' className="Links">
+                        <li><a href="#" className="navBar__Link" activeClassName="active">Photo Gallery</a></li>
+                    </Link>
                 </ul>
             </nav>
         )
