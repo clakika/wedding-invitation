@@ -1,19 +1,22 @@
 .RSVP {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    bottom: 0;
+    overflow: hidden;
 }
 
 form {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    margin-top: 8rem;
+    align-items: center;
     font-family: 'Playfair Display', serif;
+    width: 100%;
+    margin: 6rem auto;
 }
 
 .LeftSide {
     margin-right: 2rem;
+}
+.RightSide {
+    align-self: center;
 }
 
 .FormContainer {
@@ -44,7 +47,8 @@ input {
     border-bottom: 1.5px solid rgb(234, 208, 194);
     border-radius: 3px;
     height: 1.5rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.3rem;
+    margin-top: 0.8rem;
     outline: none;
     font-family: 'Playfair Display', serif;
 }
@@ -57,10 +61,22 @@ label {
 textarea {
     border: 1px solid rgb(234, 208, 194);
     border-radius: 3px;
-    margin-top: 1rem;
+    margin-top: -3rem;
+    margin-left: -6rem;
     height: 10rem;
+    width: 10rem;
+    resize: none;
+
 }
 
+.KidsMealsInput {
+    margin-top: -0.3rem;
+}
+
+.LabelComment{
+    margin-left:3rem;
+    margin-top: -17rem;
+}
 
 
 button {
@@ -72,16 +88,17 @@ button {
     font-size: 0.9em;
     position: absolute;
     right: 48%;
-    margin-top: 1rem;
+    margin-top: -4rem;
     text-transform: uppercase;
-    transition: all 0.5s;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
+    outline: none;
 }
 
 button:hover {
-    box-shadow: 6px 3px 2px rgba(135, 72, 69, 0.8);
-    transform: scale(1.1);
+    box-shadow: 6px 3px 4px rgba(135, 72, 69, 0.8);
 }
+
 
 
 
@@ -90,4 +107,93 @@ select {
     font-family: 'Playfair Display', serif;
     color: rgb(135, 72, 69);
     margin-bottom: 1.5rem;
+}
+  
+@media only screen and (max-width: 1200px) {
+    
+    .FormContainer {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    img {
+        width: 16rem;
+        position: absolute;
+        right: 40%;
+        bottom: 60%;
+        z-index: -1;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .FormContainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .FormContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .FormContainer {
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        width: 16rem;
+        position: absolute;
+        right: 30%;
+        bottom: 58%;
+        z-index: -1;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-top: 7rem;
+    }
+
+    .RSVP {
+        height: 160vh;
+    }
+
+    textarea {
+        margin-top: 0rem;
+        margin-left: -3.4rem;
+    }
+
+    .LabelComment{
+        margin-top: -1rem;
+        margin-left: -7.5rem;
+    }
+    
+    button {
+        right: 44%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        width: 16rem;
+        position: absolute;
+        right: 26%;
+        bottom: 56%;
+        z-index: -1;
+    }
 }

@@ -47,7 +47,7 @@ export class RSVP extends Component {
                             <br></br>
 
                             <label>Kids meal required: <span>*</span></label>
-                            <input type="number" min="0" max="4" required></input>
+                            <input className="KidsMealsInput" type="number" min="0" max="4" required></input>
                             <br></br>
 
                             <label>Food allergies/intolerances <span>*</span></label>
@@ -55,7 +55,8 @@ export class RSVP extends Component {
                             <input type="text"></input>
                             <br></br>
                         </div>
-                        <label>Comments? <span>*</span></label>
+                        <br></br>
+                        <label className="LabelComment">Comments</label>
                             <br></br>
                             <textarea></textarea>
                             <br></br>

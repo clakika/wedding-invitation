@@ -7,12 +7,13 @@
     z-index: -1;
     position: absolute;
     background-size: cover;
-    overflow: hidden;
+    overflow: content;
 }
 
 .Home {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .Header {
@@ -52,4 +53,104 @@
 hr {
   border: 1px solid;
   color: rgb(234, 208, 194);
+}
+
+@media only screen and (max-width: 1260px) {
+  .Home img {
+    top: -1rem;
+    left:0;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+  .Home img {
+    top: 2rem;
+    left:0;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .Header h1 {
+    font-size: 3em;
+  }
+  
+  .Header h3 {
+    font-weight: 100;
+    font-size: 1em;
+    color: rgb(135, 72, 69);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .Header span {
+    font-size: 1.5em;
+  }
+
+  .Header {
+    top: 17rem;
+  }
+
+  .Home img {
+    top: 7rem;
+    left:2rem;
+    width: 98%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Home img {
+    top: 7rem;
+    left:4rem;
+    width: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .Header {
+    left: 50%;
+  }
+  
+  .Home img {
+    top: 1rem;
+    left:4rem;
+    width: 170%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .Header {
+    left: 45%;
+  }
+  
+  .Home img {
+    top: 5rem;
+    left:4rem;
+    width: 170%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .Header {
+    left: 40%;
+  }
+  
+  .Home img {
+    top: 5rem;
+    left:4rem;
+    width: 150%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Header {
+    left: 40%;
+  }
+  
+  .Home img {
+    top: 9rem;
+    left:4rem;
+    width: 150%;
+  }
 }
