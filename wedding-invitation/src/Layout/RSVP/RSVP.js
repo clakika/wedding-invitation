@@ -13,12 +13,12 @@ export class RSVP extends Component {
                     <form>
                         <div className="LeftSide">
                             <label>First Name: <span>*</span></label>
-                            <br></br>
+                            <br className="FieldDivider"></br>
                             <input type="text" required></input>
                             <br></br>
 
                             <label>Last Name: <span>*</span></label>
-                            <br></br>
+                            <br className="FieldDivider"></br>
                             <input type="text" required></input>
                             <br></br>
 
@@ -30,19 +30,19 @@ export class RSVP extends Component {
                             <br></br>
 
                             <label>Additional Guests' Names</label>
-                            <br></br>
+                            <br className="FieldDivider"></br>
                             <input type="text"></input>
 
                         </div>
 
                         <div className="RightSide">
                             <label>E-Mail: <span>*</span></label>
-                            <br></br>
+                            <br className="FieldDivider"></br>
                             <input type="email" required></input>
                             <br></br>
 
                             <label>Phone Number: <span>*</span></label>
-                            <br></br>
+                            <br className="FieldDivider"></br>
                             <input type="text" required></input>
                             <br></br>
 
@@ -51,13 +51,13 @@ export class RSVP extends Component {
                             <br></br>
 
                             <label>Food allergies/intolerances <span>*</span></label>
-                            <br></br>
+                            <br className="FieldDivider"></br>
                             <input type="text"></input>
                             <br></br>
                         </div>
                         <br></br>
                         <label className="LabelComment">Comments</label>
-                            <br></br>
+                            <br className="FieldDivider"></br>
                             <textarea></textarea>
                             <br></br>
                     </form>

@@ -7,7 +7,9 @@ export class Home extends Component {
     render() {
         return (
             <div className="Home">
-                <img src={background}/>
+                <div className="ImageContainer">
+                    <img src={background}/>
+                </div>
                 <header className="Header">
                     <h1>MR<span> & </span>MRS</h1>
                     <h3>are getting married</h3>

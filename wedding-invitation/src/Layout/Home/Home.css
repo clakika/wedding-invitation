@@ -1,4 +1,4 @@
-.Home img {
+.ImageContainer img {
     width: 100%;
     max-height: 110vh;
     background-position: center;
@@ -55,16 +55,25 @@ hr {
   color: rgb(234, 208, 194);
 }
 
-@media only screen and (max-width: 1260px) {
-  .Home img {
+@media only screen and (max-width: 1350px) {
+  .ImageContainer img {
     top: -1rem;
-    left:0;
+    left: 0rem;
+    right: 0;
+    right: 0;
+}
+}
+
+@media only screen and (max-width: 1260px) {
+  .ImageContainer img {
+    top: -1rem;
+    left: 0rem;
 }
 }
 
 @media only screen and (max-width: 1200px) {
-  .Home img {
-    top: 2rem;
+  .ImageContainer img {
+    top: 0rem;
     left:0;
   }
 
@@ -92,41 +101,50 @@ hr {
   }
 
   .Home img {
-    top: 7rem;
-    left:2rem;
+    top: 3rem;
     width: 98%;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .Home img {
-    top: 7rem;
-    left:4rem;
-    width: 90%;
+  .ImageContainer img {
+    top: 4rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
   }
 
 }
 
 @media only screen and (max-width: 800px) {
   .Header {
-    left: 50%;
+    left: 40%;
+
   }
   
-  .Home img {
-    top: 1rem;
-    left:4rem;
+  .ImageContainer img {
+    top: -13rem;
     width: 170%;
   }
+
+  .ImageContainer {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+
 }
 
 @media only screen and (max-width: 700px) {
   .Header {
-    left: 45%;
+    left: 40%;
   }
   
-  .Home img {
-    top: 5rem;
-    left:4rem;
+  .ImageContainer img {
+    top: 0rem;
+    left:0rem;
     width: 170%;
   }
 }
@@ -136,11 +154,20 @@ hr {
     left: 40%;
   }
   
-  .Home img {
-    top: 5rem;
-    left:4rem;
-    width: 150%;
+  .ImageContainer img {
+    top: -7rem;
+    left:0rem;
+    width: 180%;
   }
+
+  .ImageContainer {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+
+  
 }
 
 @media only screen and (max-width: 600px) {
@@ -148,9 +175,17 @@ hr {
     left: 40%;
   }
   
-  .Home img {
-    top: 9rem;
-    left:4rem;
-    width: 150%;
+  .ImageContainer img {
+    top: -4rem;
+    width: 180%;
+    left:0;
+    position: absolute;
+  }
+
+  .ImageContainer {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
   }
 }
