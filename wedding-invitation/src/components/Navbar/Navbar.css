@@ -13,9 +13,6 @@ nav ul {
   justify-content: center;
 }
 
-.navBar__Link:hover {
-    border-bottom: 1px solid rgb(135, 72, 69);
-}
 
 .navBar__Link{
   margin-right: 8rem;
@@ -23,7 +20,25 @@ nav ul {
   color: rgb(135, 72, 69);
   font-size: 0.9em;
   text-decoration: none;
-  transition: all .3s ease;
+  position: relative;
+}
+
+.navBar__Link::after {
+  content: "";
+  width: 2%;
+  height: 1.5px;
+  background-color: rgba(135, 72, 69, 0.671);
+  position: absolute;
+  left: 0%;
+  top: 1.2rem;
+  margin-top: 2px;
+  transition: width .7s ease;
+
+}
+
+.navBar__Link:hover:after {
+  width: 100%;
+  transition: width .7s ease;
 }
 
 .fade-appear,
@@ -51,63 +66,43 @@ nav ul {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 1260px) {
-    
-  }
   
-  @media only screen and (max-width: 1000px) {
-    .navBar__Link{
-        font-size: 1rem;
-        margin-right: 3rem;
-        letter-spacing: 2px;
-        color: rgb(135, 72, 69);
-        font-size: 0.9em;
-        text-decoration: none;
-        transition: all .3s ease;
-      }
-  }
-  
-  @media only screen and (max-width: 900px) {
-
-   
-  }
-
-  @media only screen and(max-width: 850px) {
-
-  }
-  
-  @media only screen and (max-width: 800px) {
-    .navBar__Link{
-        margin-right: 2.3rem;
-      }
-
-      nav ul {
-        margin-left: -5.5rem;
+@media only screen and (max-width: 1000px) {
+  .navBar__Link{
+      font-size: 1rem;
+      margin-right: 3rem;
+      letter-spacing: 2px;
+      color: rgb(135, 72, 69);
+      font-size: 0.9em;
+      text-decoration: none;
+      transition: all .3s ease;
     }
-  }
-  
-  @media only screen and (max-width: 700px) {
-      
-  }
-  
-  @media only screen and (max-width: 650px) {
-    
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .navBar__Link{
-        margin-right: 1.5rem;
-        letter-spacing: 2px;
-        color: rgb(135, 72, 69);
-        font-size: 0.8em;
-        text-decoration: none;
-        transition: all .3s ease;
-      }
+}
 
-      nav ul {
-          margin-left: -5rem;
-      }
-      nav {
-          margin-top: 1rem;
-      }
+@media only screen and (max-width: 800px) {
+  .navBar__Link{
+      margin-right: 2.3rem;
+    }
+
+    nav ul {
+      margin-left: -5.5rem;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .navBar__Link{
+      margin-right: 1.5rem;
+      letter-spacing: 2px;
+      color: rgb(135, 72, 69);
+      font-size: 0.8em;
+      text-decoration: none;
+      transition: all .3s ease;
+    }
+
+    nav ul {
+        margin-left: -5rem;
+    }
+    nav {
+        margin-top: 1rem;
+    }
+}

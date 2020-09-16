@@ -1,6 +1,7 @@
 .RSVP {
     bottom: 0;
     overflow: hidden;
+    height: 80vh;
 }
 
 form {
@@ -66,7 +67,25 @@ textarea {
     height: 10rem;
     width: 10rem;
     resize: none;
+    outline: none;
+}
 
+select {
+    outline: none;
+}
+
+.icon {
+    color:rgb(135, 72, 69);
+    margin-left: 11px;
+    transition: all .6s ease-in-out;
+    opacity: 0;
+}
+
+.icon.error {
+    color:rgb(135, 72, 69);
+    margin-left: 11px;
+    transition: all .6s ease-in-out;
+    opacity: 1;
 }
 
 .KidsMealsInput {
@@ -78,8 +97,47 @@ textarea {
     margin-top: -17rem;
 }
 
+.MessageRSVP {
+    max-width: 25rem;
+    padding: 2rem;
+    height: 10rem;
+    text-align: center;
+    line-height: 2.5;
+    background-color: rgb(243, 234, 230);
+    position: relative;
+    transform: translate(9rem, -26rem);
+    color:rgb(135, 72, 69);
+    font-family: 'Playfair Display', serif;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease-in-out;
+}
 
-button {
+.MessageRSVP.visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+.textBox {
+    margin-top: -3rem;
+    position: absolute;
+    transform: translate(3rem, 3rem);
+}
+
+.exitButton {
+    font-family: 'Playfair Display', serif;
+    color:rgb(135, 72, 69);
+    font-size: 1.2em;
+    font-weight: 800;
+    position: absolute;
+    cursor: pointer;
+    transform: translate(12rem, -1.5rem);
+}
+
+
+
+.Button {
     background-color: rgb(135, 72, 69);
     border: none;
     padding: 0.6rem;
@@ -93,10 +151,17 @@ button {
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     outline: none;
+    opacity: 0.5;
+    pointer-events: none;
 }
 
-button:hover {
+.Button.true:hover {
     box-shadow: 6px 3px 4px rgba(135, 72, 69, 0.8);
+}
+
+.Button.true {
+    opacity: 1;
+    pointer-events: all;
 }
 
 select {
@@ -177,7 +242,7 @@ select {
         margin-left: -18rem;
     }
     
-    button {
+    .Button {
         right: 44%;
     }
 
