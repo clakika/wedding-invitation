@@ -1,6 +1,6 @@
 .Location {
     text-align: center;
-    height: 90vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,6 +121,17 @@
         margin-top: 1rem;
     }
     
+}
+
+@media only screen and (max-width: 780px) {
+    .Location {
+        height: auto;
+    }
+
+    .LocationsContainer {
+        margin-bottom: 7rem;
+    }
+
 }
 
 

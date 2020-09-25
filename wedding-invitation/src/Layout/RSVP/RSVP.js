@@ -23,8 +23,10 @@ export class RSVP extends Component {
         return (
             <div className="RSVP">
                 <div className="FormContainer">
-                    <h1>RSVP</h1>
-                    <img src={RSVPimage}></img>
+                    <div className="FormContainer__Title">
+                        <h1>RSVP</h1>
+                        <img src={RSVPimage}></img>
+                    </div>
                     <form onChange={() => {
                         const button = document.querySelector(".Button");
                         const name = document.querySelector(".NameInput");
@@ -34,7 +36,7 @@ export class RSVP extends Component {
                         const phone = document.querySelector(".PhoneInput");
                         const kidsMeal = document.querySelector(".KidsMealInput");
 
-                        if(this.state.name == true && this.state.lastName == true && this.state.attending == true && this.state.email == true && this.state.phone == true && this.state.kidsMeal == true) {
+                        if (this.state.name == true && this.state.lastName == true && this.state.attending == true && this.state.email == true && this.state.phone == true && this.state.kidsMeal == true) {
                             button.classList.add("true");
                         } else {
                             button.classList.remove("true");
@@ -43,45 +45,45 @@ export class RSVP extends Component {
                         <div className="LeftSide">
                             <label>First Name: <span>*</span></label>
                             <br className="FieldDivider"></br>
-                            <input 
-                                type="text" 
-                                required 
+                            <input
+                                type="text"
+                                required
                                 className="NameInput"
                                 onChange={() => {
                                     const name = document.querySelector(".NameInput");
                                     const nameIcon = document.querySelector(".iconName")
 
-                                    if(name.value.length < 2) {
+                                    if (name.value.length < 2) {
                                         nameIcon.classList.add("error");
-                                        this.setState({name: false});
+                                        this.setState({ name: false });
                                     } else {
                                         nameIcon.classList.remove("error")
-                                        this.setState({name: true});
+                                        this.setState({ name: true });
                                     }
                                 }}
-                                ></input>
+                            ></input>
                             <FontAwesomeIcon className="icon iconName" icon={faExclamationCircle} />
                             <br></br>
 
                             <label>Last Name: <span>*</span></label>
                             <br className="FieldDivider"></br>
-                            <input 
-                                type="text" 
+                            <input
+                                type="text"
                                 required
                                 className="LastNameInput"
                                 onChange={() => {
                                     const lastName = document.querySelector(".LastNameInput");
                                     const lastNameIcon = document.querySelector(".iconLastName")
 
-                                    if(lastName.value.length < 2) {
+                                    if (lastName.value.length < 2) {
                                         lastNameIcon.classList.add("error");
-                                        this.setState({lastName: false});
+                                        this.setState({ lastName: false });
                                     } else {
                                         lastNameIcon.classList.remove("error");
-                                        this.setState({lastName: true});
+                                        this.setState({ lastName: true });
                                     }
                                 }}
-                                ></input>
+                            ></input>
                             <FontAwesomeIcon icon={faExclamationCircle} className="icon iconLastName" />
                             <br></br>
 
@@ -93,19 +95,19 @@ export class RSVP extends Component {
                                     const attending = document.querySelector(".AttendingInput");
                                     const attendingIcon = document.querySelector(".iconAttending")
 
-                                    if(attending.value == "selectedOption") {
+                                    if (attending.value == "selectedOption") {
                                         attendingIcon.classList.add("error");
-                                        this.setState({attending: false});
+                                        this.setState({ attending: false });
                                     } else {
                                         attendingIcon.classList.remove("error");
-                                        this.setState({attending: true});
+                                        this.setState({ attending: true });
                                     }
                                 }}>
                                 <option value="selectOption">Yes/No</option>
                                 <option>Yes</option>
                                 <option>No</option>
                             </select>
-                            <FontAwesomeIcon icon={faExclamationCircle} className="icon iconAttending"/>
+                            <FontAwesomeIcon icon={faExclamationCircle} className="icon iconAttending" />
                             <br></br>
 
                             <label>Additional Guests' Names</label>
@@ -117,8 +119,8 @@ export class RSVP extends Component {
                         <div className="RightSide">
                             <label>E-Mail: <span>*</span></label>
                             <br className="FieldDivider"></br>
-                            <input 
-                                type="email" 
+                            <input
+                                type="email"
                                 required
                                 className="EmailInput"
                                 onChange={() => {
@@ -126,88 +128,90 @@ export class RSVP extends Component {
                                     const emailIcon = document.querySelector(".iconEmail");
                                     const regx = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
-                                    if(regx.test(email.value) == false) {
+                                    if (regx.test(email.value) == false) {
                                         emailIcon.classList.add("error");
-                                        this.setState({email: false});
+                                        this.setState({ email: false });
                                     } else {
                                         emailIcon.classList.remove("error");
-                                        this.setState({email: true});
+                                        this.setState({ email: true });
                                     }
                                 }}>
 
-                                </input>
-                            <FontAwesomeIcon icon={faExclamationCircle} className="icon iconEmail"/>
+                            </input>
+                            <FontAwesomeIcon icon={faExclamationCircle} className="icon iconEmail" />
                             <br></br>
 
                             <label>Phone Number: <span>*</span></label>
                             <br className="FieldDivider"></br>
-                            <input 
-                            type="text" 
-                            required
-                            className="PhoneInput"
-                            onChange={() => {
+                            <input
+                                type="text"
+                                required
+                                className="PhoneInput"
+                                onChange={() => {
                                     const phone = document.querySelector(".PhoneInput");
                                     const phoneIcon = document.querySelector(".iconPhone");
                                     const regx = /[0-9]|\./;
 
-                                    if(regx.test(phone.value) == false) {
+                                    if (regx.test(phone.value) == false) {
                                         phoneIcon.classList.add("error");
-                                        this.setState({phone: false});
+                                        this.setState({ phone: false });
                                     } else {
                                         phoneIcon.classList.remove("error");
-                                        this.setState({phone: true});
+                                        this.setState({ phone: true });
                                     }
                                 }}></input>
-                            <FontAwesomeIcon icon={faExclamationCircle} className="icon iconPhone"/>
+                            <FontAwesomeIcon icon={faExclamationCircle} className="icon iconPhone" />
                             <br></br>
 
                             <label>Kids meal required: <span>*</span></label>
-                            <input 
-                                className="KidsMealInput" 
-                                type="number" 
-                                min="0" 
-                                max="4" 
+                            <input
+                                className="KidsMealInput"
+                                type="number"
+                                min="0"
+                                max="4"
                                 required
                                 onChange={() => {
                                     const kidsMeal = document.querySelector(".KidsMealInput");
                                     const kidsMealIcon = document.querySelector(".iconKidsMeal");
 
-                                    if(kidsMeal.value < 0 ) {
+                                    if (kidsMeal.value < 0) {
                                         kidsMealIcon.classList.add("error");
-                                        this.setState({kidsMeal: false});
+                                        this.setState({ kidsMeal: false });
                                     } else {
                                         kidsMealIcon.classList.remove("error");
-                                        this.setState({kidsMeal: true});
+                                        this.setState({ kidsMeal: true });
                                     }
                                 }}></input>
-                            <FontAwesomeIcon icon={faExclamationCircle} className="icon iconKidsMeal"/>
+                            <FontAwesomeIcon icon={faExclamationCircle} className="icon iconKidsMeal" />
                             <br></br>
 
-                            <label>Food allergies/intolerances <span>*</span></label>
+                            <label>Food allergies/intolerances</label>
                             <br className="FieldDivider"></br>
                             <input type="text"></input>
                             <br></br>
                         </div>
                         <br></br>
-                        <label className="LabelComment">Comments</label>
+                        <div className="CommentArea">
+                            <label className="LabelComment">Comments</label>
                             <br className="FieldDivider"></br>
                             <textarea></textarea>
-                            <br></br>
+                        </div>
+                        <br></br>
                     </form>
                     <button className="Button" onClick={() => {
                         const message = document.querySelector(".MessageRSVP");
-                        
+
                         message.classList.add("visible");
-                        
+
                     }}>Submit</button>
                     <div className="MessageRSVP">
-                        <span 
-                        className="exitButton"
-                        onClick={()=> {
-                            const message = document.querySelector(".MessageRSVP");
-                        
-                            message.classList.remove("visible");
-                        }}
+                        <span
+                            className="exitButton"
+                            onClick={() => {
+                                const message = document.querySelector(".MessageRSVP");
+
+                                message.classList.remove("visible");
+                            }}
                         >x</span>
                         <div className="textBox">
                             <h2>Thank you!

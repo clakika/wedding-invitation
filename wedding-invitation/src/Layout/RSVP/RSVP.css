@@ -1,32 +1,44 @@
 .RSVP {
     bottom: 0;
     overflow: hidden;
-    height: 80vh;
+    max-height: 95vh;
+    margin: 2rem auto;
 }
 
 form {
     display: flex;
-    justify-content: center;
     align-items: center;
     font-family: 'Playfair Display', serif;
-    width: 100%;
-    margin: 6rem auto;
+    width: 90%;
+    margin: 7rem auto;
 }
 
 .LeftSide {
-    margin-right: 2rem;
+    margin-right: 3rem;
+    margin-left: 2rem;
+    align-self: flex-start;
+    
 }
+
+.RightSide input {
+    
+}
+
+.LeftSide input {
+    
+}
+
 .RightSide {
-    align-self: center;
+    align-self: flex-start;
 }
 
 .FormContainer {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
 
-.FormContainer h1 {
+.FormContainer__Title h1 {
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-size: 3.5em;
@@ -35,12 +47,20 @@ form {
     margin-top: 1rem;
 }
 
-img {
+.FormContainer__Title {
+    width: 20rem;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+}
+
+
+.FormContainer__Title img {
     width: 16rem;
-    position: absolute;
-    right: 42%;
-    bottom: 60%;
+    margin-top: -5rem;
     z-index: -1;
+    position: absolute;
+
 }
 
 input {
@@ -48,22 +68,25 @@ input {
     border-bottom: 1.5px solid rgb(234, 208, 194);
     border-radius: 3px;
     height: 1.5rem;
-    margin-bottom: 1.3rem;
     margin-top: 0.8rem;
+    margin-bottom: 1.2rem;
     outline: none;
     font-family: 'Playfair Display', serif;
+    color: rgb(135, 72, 69);
+
 }
 
 label {
     color: rgb(135, 72, 69);
     margin-right: 1rem;
+    margin-top: 1rem;
 }
 
 textarea {
     border: 1px solid rgb(234, 208, 194);
     border-radius: 3px;
-    margin-top: -3rem;
-    margin-left: -6rem;
+    margin-left: 2.9rem;
+    margin-top: 1rem;
     height: 10rem;
     width: 10rem;
     resize: none;
@@ -72,6 +95,7 @@ textarea {
 
 select {
     outline: none;
+    border-radius: 3px;
 }
 
 .icon {
@@ -88,13 +112,20 @@ select {
     opacity: 1;
 }
 
-.KidsMealsInput {
-    margin-top: -0.3rem;
+.KidsMealInput {
+    margin-top: 0.3rem;
+    margin-bottom: 1.4rem;
+    width: 2.5rem;
+    color:rgb(135, 72, 69);
+    text-align: center;
 }
 
 .LabelComment{
     margin-left:3rem;
-    margin-top: -17rem;
+}
+
+.CommentArea {
+    align-self: flex-start;
 }
 
 .MessageRSVP {
@@ -168,6 +199,7 @@ select {
     border: 2px solid rgb(234, 208, 194);
     font-family: 'Playfair Display', serif;
     color: rgb(135, 72, 69);
+    margin-top: 0.5rem;
     margin-bottom: 1.5rem;
 }
   
@@ -176,16 +208,6 @@ select {
     .FormContainer {
         width: 80%;
         margin: 0 auto;
-    }
-}
-
-@media only screen and (max-width: 950px) {
-    img {
-        width: 16rem;
-        position: absolute;
-        right: 40%;
-        bottom: 60%;
-        z-index: -1;
     }
 }
 
@@ -202,6 +224,10 @@ select {
         width: 100%;
         margin: 0 auto;
     }
+
+    .RSVP {
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -210,13 +236,6 @@ select {
         height: 100%;
     }
 
-    img {
-        width: 16rem;
-        position: absolute;
-        right: 30%;
-        bottom: 58%;
-        z-index: -1;
-    }
 
     form {
         display: flex;
@@ -228,7 +247,7 @@ select {
     }
 
     .RSVP {
-        height: 160vh;
+        height: auto;
     }
 
     textarea {
@@ -251,16 +270,94 @@ select {
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
+    .LeftSide {
+        margin-right: 0rem;
+        margin-left: 2rem;
+        
+    }
 
+    .RightSide {
+        margin-left: 2rem;
+    }
+
+    .FormContainer__Title img {
+        margin-left: 1rem;
+    }
+
+    input {
+        width: 10rem;
+    }
+
+    .CommentArea {
+        margin-left: 10rem;
+        margin-top: 1rem;
+        position: relative;
+    }
+
+    .LabelComment {
+        margin-left: -8rem;
+        margin-top: 0rem;
+        position: absolute;
+    }
+
+    textarea {
+        margin-top: 3rem;
+        margin-left: -8rem;
+    }
+
+    .KidsMealInput {
+        margin-top: -2rem;
+    }
+
+    .RSVP {
+        height: auto;
+    }
 }
 
-@media only screen and (max-width: 600px) {
-    img {
-        width: 16rem;
+
+
+@media only screen and (max-width: 415px) {
+    .LeftSide {
+        margin-right: 0rem;
+        margin-left: 2rem;
+        
+    }
+
+    .RightSide {
+        margin-left: 2rem;
+    }
+
+    .FormContainer__Title img {
+        margin-left: 1rem;
+    }
+
+    input {
+        width: 10rem;
+    }
+
+    .CommentArea {
+        margin-left: 10rem;
+        margin-top: 1rem;
+        position: relative;
+    }
+
+    .LabelComment {
+        margin-left: -8rem;
+        margin-top: 0rem;
         position: absolute;
-        right: 26%;
-        bottom: 56%;
-        z-index: -1;
+    }
+
+    textarea {
+        margin-top: 3rem;
+        margin-left: -8rem;
+    }
+
+    .KidsMealInput {
+        margin-top: -2rem;
+    }
+
+    .RSVP {
+        height: auto;
     }
 }
