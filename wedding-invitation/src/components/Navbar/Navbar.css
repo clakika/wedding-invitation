@@ -139,7 +139,7 @@ nav ul {
   .MobileNavigation {
     position: absolute;
     cursor: pointer;
-    right: 20%;
+    right: 22%;
     top: 30%;
     z-index: 100000;
   }

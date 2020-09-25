@@ -25,23 +25,63 @@ export class Navbar extends Component {
 
                 <ul className="NavigationList">
                     <Link exact to='/' className="Links">
-                        <li><a href="#" className="navBar__Link" activeClassName="active">Home</a></li>
+                        <li 
+                        onClick={() => {
+                        const mobileNav = document.querySelector('.MobileNavigation');
+                        const navList = document.querySelector('.NavigationList');
+                        
+                        mobileNav.classList.toggle("open");
+                        navList.classList.toggle("open");
+                        
+                    }}><a href="#" className="navBar__Link" activeClassName="active">Home</a></li>
                     </Link>
 
                     <Link to='/rsvp' className="Links">
-                        <li><a href="#" className="navBar__Link" activeClassName="active">RSVP</a></li>
+                        <li 
+                        onClick={() => {
+                        const mobileNav = document.querySelector('.MobileNavigation');
+                        const navList = document.querySelector('.NavigationList');
+                        
+                        mobileNav.classList.toggle("open");
+                        navList.classList.toggle("open");
+                        
+                    }}><a href="#" className="navBar__Link" activeClassName="active">RSVP</a></li>
                     </Link>
 
                     <Link to='/story' className="Links">
-                        <li><a href="#" className="navBar__Link" activeClassName="active">Our Story</a></li>
+                        <li 
+                        onClick={() => {
+                        const mobileNav = document.querySelector('.MobileNavigation');
+                        const navList = document.querySelector('.NavigationList');
+                        
+                        mobileNav.classList.toggle("open");
+                        navList.classList.toggle("open");
+                        
+                    }}><a href="#" className="navBar__Link" activeClassName="active">Our Story</a></li>
                     </Link>
 
                     <Link to='/location' className="Links">
-                        <li><a href="#" className="navBar__Link" activeClassName="active">Locations</a></li>
+                        <li 
+                        onClick={() => {
+                        const mobileNav = document.querySelector('.MobileNavigation');
+                        const navList = document.querySelector('.NavigationList');
+                        
+                        mobileNav.classList.toggle("open");
+                        navList.classList.toggle("open");
+                        
+                    }}><a href="#" className="navBar__Link" activeClassName="active">Locations</a></li>
                     </Link>
 
                     <Link to='/photogallery' className="Links">
-                        <li><a href="#" className="navBar__Link" activeClassName="active">Photo Gallery</a></li>
+                        <li 
+                        onClick={() => {
+                        const mobileNav = document.querySelector('.MobileNavigation');
+                        const navList = document.querySelector('.NavigationList');
+                        
+                        mobileNav.classList.toggle("open");
+                        navList.classList.toggle("open");
+                        
+                    }}><a href="#" className="navBar__Link" activeClassName="active">Photo Gallery</a></li>
                     </Link>
                 </ul>
             </nav>

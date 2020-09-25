@@ -191,13 +191,35 @@ hr {
   }
 }
 
-@media only screen and (max-width: 458px) {
+@media only screen and (max-width: 415px) {
   .Header {
     left: 40%;
   }
   
   .ImageContainer img {
-    top: -2rem;
+    top: 2rem;
+    width: 180%;
+    left:0;
+    position: absolute;
+  }
+
+  .ImageContainer {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 458px) {
+
+  .Header {
+    left: 40%;
+    top: 35%;
+  }
+  
+  .ImageContainer img {
+    margin-top: -5rem;
     width: 200%;
     left:0;
     position: absolute;
@@ -223,9 +245,14 @@ hr {
   .Header {
     left: 35%;
   }
+
+  .Home {
+    height: auto;
+    margin-top: -4rem;
+  }
   
   .ImageContainer img {
-    top: 1rem;
+    top:8rem;
     width: 200%;
     left:0;
     position: absolute;
