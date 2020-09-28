@@ -2,7 +2,7 @@
   "name": "wedding-invitation",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://clakika.github.io/wedding-invitation/home",
+  "homepage": "http://clakika.github.io/wedding-invitation",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",

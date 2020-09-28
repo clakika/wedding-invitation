@@ -29,7 +29,7 @@ class App extends Component {
                 classNames="fade"
               >
                 <Switch location={location}>
-                  <Route path="*" component={Home} />
+                  <Route path="/" component={Home} />
                   <Route path='/rsvp' component={RSVP}/>
                   <Route path='/story' component={Story}/>
                   <Route path='/location' component={Location}/>
@@ -46,53 +46,3 @@ class App extends Component {
 
 export default App;
 
-{/* <table>
-              <tr>
-                <td>Days until:</td>
-              </tr>
-              <tr className="Countdown__Info">
-                <td className="days">120</td>
-                <td className="hours">4</td>
-                <td className="minutes">12</td>
-                <td className="seconds">22</td>
-              </tr>
-              <tr>
-                <td>Days</td>
-                <td>Hours</td>
-                <td>Minutes</td>
-                <td>Seconds</td>
-              </tr>
-            </table>*/}
-
-    /*function countdown() {
-      var now = new Date();
-      var eventDate = new Date(2021, 2, 11);
-
-      var currentTime = now.getTime();
-      var eventTime = eventDate.getTime();
-
-      var remainingTime = eventTime - currentTime;
-
-      var s = Math.floor(remainingTime / 1000);
-      var m = Math.floor(s / 60);
-      var h = Math.floor(m / 60);
-      var d = Math.floor(h / 24);
-
-      h %= 24;
-      m %= 60;
-      s %= 60;
-
-      h = (h < 10) ? "0" + h : h;
-      m = (m < 10) ? "0" + m : m;
-      s = (s < 10) ? "0" + s : s;
-
-      document.querySelector("days").textContent = d;
-      document.querySelector("days").innerText = d;
-
-      document.querySelector("hours").textContent = h;
-      document.querySelector("minutes").textContent = m;
-      document.querySelector("seconds").textContent = s;
-
-      setTimeout(countdown, 1000);
-
-    }*/
