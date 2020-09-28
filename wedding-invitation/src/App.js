@@ -29,7 +29,7 @@ class App extends Component {
                 classNames="fade"
               >
                 <Switch location={location}>
-                  <Route path='/' exact component={Home}/>
+                  <Route path='/home' component={Home}/>
                   <Route path='/rsvp' component={RSVP}/>
                   <Route path='/story' component={Story}/>
                   <Route path='/location' component={Location}/>
