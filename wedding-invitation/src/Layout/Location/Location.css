@@ -44,24 +44,24 @@
 }
 
 .LocationOneImg {
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(255, 255, 255, 0.199),rgb(255, 255, 255)),
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0),rgba(245, 246, 252, 0.062), rgba(255, 255, 255, 0.199),rgb(255, 255, 255)),
     url(../../img/locationOne.jpg);
     background-position: center;
     background-size: cover;
     height: 15rem;
     width: auto;
-    border-radius: 3px;
+    border-radius: 1px;
     margin-bottom: -2.3rem;
 }
 
 .LocationTwoImg {
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(255, 255, 255, 0.199),rgb(255, 255, 255)),
-    url(../../img/locationTwo.jpg);
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(245, 246, 252, 0.062),rgba(255, 255, 255, 0.199),rgb(255, 255, 255)),
+    url(../../img/locationTwo.jpg); 
     background-position: center;
     background-size: cover;
     height: 15rem;
     width: auto;
-    border-radius: 2px;
+    border-radius: 1px;
     margin-bottom: -2.3rem;
 }
 

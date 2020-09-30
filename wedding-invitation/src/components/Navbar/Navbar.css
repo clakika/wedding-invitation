@@ -102,7 +102,7 @@ nav ul {
 @media only screen and (max-width: 515px) {
   .NavigationList {
     background-color: rgba(135, 72, 69, 0.705);
-    width: 110%;
+    width: 115%;
     height: 105vh;
     left: 0;
     right: 0rem;
@@ -128,8 +128,8 @@ nav ul {
     opacity: 1;
   }
   .Line {
-    width: 1.5rem;
-    height: 3px;
+    width: 2rem;
+    height: 4px;
     margin: 5px;
     background-color: rgb(135, 72, 69);
     border-radius: 0px;
@@ -148,7 +148,7 @@ nav ul {
     cursor: pointer;
   }
   .MobileNavigation.open .Line:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 5px);
+    transform: rotate(45deg) translate(9px, 7px);
   }
   .MobileNavigation.open .Line:nth-child(2) {
     transform: translateX(-2rem);

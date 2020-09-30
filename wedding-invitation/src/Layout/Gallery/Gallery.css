@@ -26,7 +26,12 @@
 .Picture {
     background-color: cornsilk;
     transition: all 1.3s ease;
-    border-radius: 5px;
+    border-radius: 1px;
+    opacity: 0.7;
+}
+
+.Picture:hover {
+    opacity: 1;
 }
 
 .Picture:hover {

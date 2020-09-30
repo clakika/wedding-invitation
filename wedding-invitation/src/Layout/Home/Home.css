@@ -221,8 +221,11 @@ hr {
   .ImageContainer img {
     margin-top: -5rem;
     width: 200%;
-    left:0;
+    top:20rem;
+    width: 290%;
+    left: -15rem;
     position: absolute;
+    transform: rotate(80deg);
   }
 
   .Header h1 {
@@ -243,7 +246,7 @@ hr {
 
 @media only screen and (max-width: 398px) {
   .Header {
-    left: 35%;
+    left: 43%;
   }
 
   .Home {
@@ -252,10 +255,11 @@ hr {
   }
   
   .ImageContainer img {
-    top:8rem;
-    width: 200%;
-    left:0;
+    top:20rem;
+    width: 290%;
+    left: -15rem;
     position: absolute;
+    transform: rotate(80deg);
   }
 
   .Header h1 {
