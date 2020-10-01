@@ -25,7 +25,7 @@ nav ul {
 
 .navBar__Link::after {
   content: "";
-  width: 2%;
+  width: 0%;
   height: 1.5px;
   background-color: rgba(135, 72, 69, 0.671);
   position: absolute;

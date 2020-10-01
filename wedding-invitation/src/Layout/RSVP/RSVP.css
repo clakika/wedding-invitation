@@ -344,15 +344,12 @@ select {
     }
 
     .RSVP {
-        height: 170vh;
+        height: 130vh;
         margin-bottom: 5rem;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .RSVP {
-        height: 140vh;
-    }
     .MessageRSVP {
         transform: translate(1.5rem, -18rem);
     }
