@@ -8,7 +8,9 @@ import Story from '../src/Layout/Story/Story';
 import Location from '../src/Layout/Location/Location';
 import Gallery from '../src/Layout/Gallery/Gallery';
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
+
+
 import {
   CSSTransition,
   TransitionGroup,
@@ -18,7 +20,7 @@ class App extends Component {
   render() {
 
     return (
-      <Router>
+      <HashRouter>
         <div className="App">
           <Navbar />
           <Route render={({location}) => (
@@ -39,7 +41,7 @@ class App extends Component {
             </TransitionGroup>
           )} />
         </div>
-        </Router>
+        </HashRouter>
     );
   }
 }
