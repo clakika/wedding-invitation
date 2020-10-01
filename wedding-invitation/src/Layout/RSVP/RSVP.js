@@ -216,7 +216,7 @@ export class RSVP extends Component {
                         <div className="textBox">
                             <h2>Thank you!
                             <br></br>
-                            Your RSVP has been sent <span>&hearts;</span>
+                            Your RSVP has been sent.
                             </h2>
                         </div>
                     </div>

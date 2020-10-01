@@ -161,7 +161,7 @@ select {
     font-size: 0.9em;
     position: absolute;
     right: 48%;
-    margin-top: -4rem;
+    margin-top: -2rem;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -314,7 +314,7 @@ select {
     .exitButton {
         font-family: 'Playfair Display', serif;
         color: rgb(135, 72, 69);
-        font-size: 1.5em;
+        font-size: 2em;
         font-weight: 800;
         position: absolute;
         cursor: pointer;
@@ -332,7 +332,7 @@ select {
         margin-left: 1rem;
     }
     input {
-        width: 10rem;
+        width: 8rem;
     }
     .CommentArea {
         margin-left: 10rem;
@@ -360,6 +360,6 @@ select {
 
 @media only screen and (max-width: 380px) {
     .RSVP {
-        height: 145vh;
+        height: 133vh;
     }
 }
