@@ -18,8 +18,8 @@ class App extends Component {
   render() {
 
     return (
+      <Router>
         <div className="App">
-          <Router>
           <Navbar />
           <Route render={({location}) => (
               <TransitionGroup>
@@ -38,8 +38,8 @@ class App extends Component {
               </CSSTransition>
             </TransitionGroup>
           )} />
-          </Router>
         </div>
+        </Router>
     );
   }
 }
