@@ -1,7 +1,7 @@
 .RSVP {
     bottom: 0;
     overflow: hidden;
-    height: 75vh;
+    height: 77vh;
     margin: 0 auto;
 }
 
@@ -192,6 +192,10 @@ select {
         width: 80%;
         margin: 0 auto;
     }
+
+    .RSVP {
+        height: 85vh;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -199,12 +203,17 @@ select {
         width: 90%;
         margin: 0 auto;
     }
+
 }
 
 @media only screen and (max-width: 800px) {
     .FormContainer {
         width: 100%;
         margin: 0 auto;
+    }
+
+    .RSVP {
+        height: 90vh;
     }
 }
 
@@ -251,9 +260,6 @@ select {
         margin-left: 0rem;
         margin-top: 7rem;
     }
-    .RSVP {
-        height: auto;
-    }
     textarea {
         margin-top: -1rem;
         margin-left: 4rem;
@@ -270,7 +276,7 @@ select {
         display: none;
     }
     .RSVP {
-        height: 160vh;
+        height: 140vh;
     }
     .CommentArea {
         margin-left: 10rem;
@@ -292,17 +298,19 @@ select {
 }
 
 @media only screen and (max-width: 480px) {
+
     .MessageRSVP {
         width: 15rem;
         font-size: 0.8em;
         height: 8rem;
-        transform: translate(5rem, -18rem);
+       transform: translate(1.5rem, -18rem);
     }
     .textBox {
         margin-top: -3rem;
         position: absolute;
         transform: translate(0.2rem, 3rem);
     }
+
     .exitButton {
         font-family: 'Playfair Display', serif;
         color: rgb(135, 72, 69);
@@ -312,6 +320,7 @@ select {
         cursor: pointer;
         transform: translate(7rem, -1.5rem);
     }
+
     .LeftSide {
         margin-right: 0rem;
         margin-left: 2rem;
@@ -349,22 +358,8 @@ select {
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .MessageRSVP {
-        transform: translate(1.5rem, -18rem);
-    }
-    .textBox {
-        margin-top: -3rem;
-        position: absolute;
-        transform: translate(0.2rem, 3rem);
-    }
-    .exitButton {
-        font-family: 'Playfair Display', serif;
-        color: rgb(135, 72, 69);
-        font-size: 1.5em;
-        font-weight: 800;
-        position: absolute;
-        cursor: pointer;
-        transform: translate(7rem, -1.5rem);
+@media only screen and (max-width: 380px) {
+    .RSVP {
+        height: 145vh;
     }
 }
