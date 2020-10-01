@@ -8,12 +8,43 @@ export class Gallery extends Component {
                 <h1>Photo Gallery</h1>
 
                 <div className="GalleryContainer">
-                    <div className="imageOne Picture"></div>
-                    <div className="imageTwo Picture"></div>
-                    <div className="imageThree Picture"></div>
-                    <div className="imageFour Picture"></div>
-                    <div className="imageFive Picture"></div>
-                    <div className="imageSix Picture"></div>
+                    <div className="imageOne Picture" onClick={() => {
+                        const image = document.querySelector(".imageOne");
+                        const picture = document.querySelector(".Picture");
+
+                        picture.classList.toggle("clicked");
+                    }
+                    }></div>
+                    <div className="imageTwo Picture" onClick={() => {
+                        const picture = document.querySelector(".Picture");
+
+                        picture.classList.add("clicked");
+                    }
+                    }></div>
+                    <div className="imageThree Picture" onClick={() => {
+                        const picture = document.querySelector(".Picture");
+
+                        picture.classList.add("clicked");
+                    }
+                    }></div>
+                    <div className="imageFour Picture" onClick={() => {
+                        const picture = document.querySelector(".Picture");
+
+                        picture.classList.add("clicked");
+                    }
+                    }></div>
+                    <div className="imageFive Picture" onClick={() => {
+                        const picture = document.querySelector(".Picture");
+
+                        picture.classList.add("clicked");
+                    }
+                    }></div>
+                    <div className="imageSix Picture" onClick={() => {
+                        const picture = document.querySelector(".Picture");
+
+                        picture.classList.add("clicked");
+                    }
+                    }></div>
                 </div>
             </div>
         )

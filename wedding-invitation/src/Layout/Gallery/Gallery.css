@@ -1,11 +1,11 @@
 .Gallery {
-    height: 117vh;
+    height: 120vh;
     text-align: center;
 }
 
 .Gallery h1{
     margin-bottom: 5rem;
-    margin-top: 1rem;
+    margin-top: -1rem;
     font-family: 'Playfair Display', serif;
     font-size: 3em;
     color: rgba(135, 72, 69, 0.849);
@@ -32,10 +32,14 @@
 
 .Picture:hover {
     opacity: 1;
+    transform: scale(1.2);
+    z-index: 10;
 }
 
-.Picture:hover {
+.Picture.clicked {
     transform: scale(1.2);
+    opacity: 1;
+    z-index: 10;
 }
 
 .imageOne {
@@ -226,9 +230,6 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .Gallery {
-        margin-top: -3rem;
-    }
 
     .Picture:hover {
         transform: scale(1);

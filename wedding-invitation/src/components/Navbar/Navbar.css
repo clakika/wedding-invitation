@@ -100,8 +100,15 @@ nav ul {
 }
 
 @media only screen and (max-width: 515px) {
+  nav{
+    height: 4rem;
+    padding: 0;
+    margin-top: 0.5rem;
+  }
+
   .NavigationList {
-    background-color: rgba(135, 72, 69, 0.705);
+    background: linear-gradient(to bottom, rgba(135, 72, 69, 0.356), rgb(135, 72, 69), rgba(135, 72, 69, 0.356)),
+    linear-gradient(to top, rgba(135, 72, 69, 0.356), rgb(135, 72, 69), rgba(135, 72, 69, 0.356));
     width: 115%;
     height: 105vh;
     left: 0;
@@ -128,8 +135,8 @@ nav ul {
     opacity: 1;
   }
   .Line {
-    width: 2rem;
-    height: 4px;
+    width: 1.7rem;
+    height: 3px;
     margin: 5px;
     background-color: rgb(135, 72, 69);
     border-radius: 0px;
@@ -139,8 +146,8 @@ nav ul {
   .MobileNavigation {
     position: absolute;
     cursor: pointer;
-    right: 22%;
-    top: 30%;
+    right: 8%;
+    top: 40%;
     z-index: 100000;
   }
   .MobileNavigation.open .Line {
@@ -148,7 +155,7 @@ nav ul {
     cursor: pointer;
   }
   .MobileNavigation.open .Line:nth-child(1) {
-    transform: rotate(45deg) translate(9px, 7px);
+    transform: rotate(45deg) translate(7px, 5px);
   }
   .MobileNavigation.open .Line:nth-child(2) {
     transform: translateX(-2rem);
@@ -178,16 +185,6 @@ nav ul {
 }
 
 @media only screen and (max-width: 480px) {
-  .navBar__Link {
-    margin-right: 0.7rem;
-    padding: 0;
-  }
-  nav ul {
-    margin-left: -5rem;
-  }
-  nav {
-    margin-top: -1rem;
-  }
 }
 
 @media only screen and (max-width: 480px) {
