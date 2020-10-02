@@ -214,6 +214,7 @@ select {
 
     .RSVP {
         height: 90vh;
+        margin-bottom: 2rem;
     }
 }
 
@@ -277,6 +278,7 @@ select {
     }
     .RSVP {
         height: 140vh;
+        margin-bottom: 2rem;
     }
     .CommentArea {
         margin-left: 10rem;
@@ -303,7 +305,7 @@ select {
         width: 15rem;
         font-size: 0.8em;
         height: 8rem;
-       transform: translate(1.5rem, -18rem);
+        transform: translate(1.5rem, -18rem);
     }
     .textBox {
         margin-top: -3rem;
@@ -353,13 +355,13 @@ select {
     }
 
     .RSVP {
-        height: 130vh;
-        margin-bottom: 5rem;
+        height: 140vh;
+        margin-bottom: 2rem;
     }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 388px) {
     .RSVP {
-        height: 133vh;
+        height: 143vh;
     }
 }

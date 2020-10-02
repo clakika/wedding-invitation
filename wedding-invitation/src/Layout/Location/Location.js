@@ -15,7 +15,7 @@ export class Location extends Component {
                         <h2>Ceremony</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper, risus vitae aliquam varius, nibh orci pretium est, ut maximus augue urna ac mi. </p>
                         <h5>❀</h5>
-                        <p className="Address">3134, Main Street N.23, Seattle, Washington</p>
+                        <p className="Address">12161, Leopoldstraße 37, Berlin Friedenau, Berlin</p>
                     </div>
 
                     <div className="BoxTwo Box">
@@ -23,7 +23,7 @@ export class Location extends Component {
                         <h2>Restaurant</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper, risus vitae aliquam varius, nibh orci pretium est, ut maximus augue urna ac mi. </p>
                         <h5>❀</h5>
-                        <p className="Address">3134, Main Street N.23, Seattle, Washington</p>
+                        <p className="Address">12559, Brandenburgische Straße 11, Berlin Köpenick, Berlin</p>
                     </div>
 
                 </div>
